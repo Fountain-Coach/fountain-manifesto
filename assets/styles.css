@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&display=swap');
+
+body {
+  font-family: 'EB Garamond', serif;
+  background: #fdfaf6;
+  color: #111;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-size: 18px;
+  line-height: 1.75;
+}
+
+h1 {
+  font-size: 2.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-style: italic;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+  text-indent: 1.5em;
+}
+
+a {
+  color: #222;
+  text-decoration: underline dotted;
+}
+
+.logo-header {
+  width: 80px;
+  float: right;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  opacity: 0.85;
+}
+
+/* Inline illustrations */
+.illustration {
+  opacity: 0.9;
+  border-radius: 2px;
+  height: auto;
+  max-width: 100%;
+}
+
+.float-left {
+  float: left;
+  margin-right: 1.5rem;
+  margin-bottom: 1rem;
+  width: 200px;
+  max-width: 40%;
+}
+
+.float-right {
+  float: right;
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+  width: 200px;
+  max-width: 40%;
+}
+
+/* Responsive overrides */
+@media screen and (max-width: 768px) {
+  body {
+    padding: 1.5rem 1rem;
+    font-size: 16px;
+  }
+
+  .float-left,
+  .float-right {
+    float: none;
+    display: block;
+    margin: 1.5rem auto;
+    width: 80%;
+    max-width: 320px;
+  }
+
+  p {
+    text-indent: 0;
+  }
+
+  .logo-header {
+    float: none;
+    display: block;
+    margin: 0 auto 1.5rem;
+  }
+}
