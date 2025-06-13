@@ -41,13 +41,27 @@ a {
 }
 
 /* Inline illustrations */
-.illustration {
-  opacity: 0.9;
-  border-radius: 2px;
-  height: auto;
+figure {
+  margin: 1.5rem 0;
   max-width: 100%;
 }
 
+figure img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 2px;
+  opacity: 0.9;
+}
+
+figcaption {
+  font-size: 0.9rem;
+  color: #444;
+  margin-top: 0.25rem;
+  line-height: 1.4;
+}
+
+/* Float styles for responsive inline placement */
 .float-left {
   float: left;
   margin-right: 1.5rem;
@@ -88,5 +102,9 @@ a {
     float: none;
     display: block;
     margin: 0 auto 1.5rem;
+  }
+
+  figure {
+    text-align: center;
   }
 }
