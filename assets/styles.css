@@ -32,18 +32,17 @@ a {
   text-decoration: underline dotted;
 }
 
-/* Logo in header */
 .logo-header {
   width: clamp(48px, 12vw, 80px);
   height: auto;
-  float: right;
-  margin-left: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
   margin-bottom: 1rem;
-  opacity: 0.85;
+  opacity: 0.9;
   max-height: 64px;
 }
 
-/* Illustrations */
 .illustration {
   opacity: 0.9;
   border-radius: 2px;
@@ -51,7 +50,18 @@ a {
   max-width: 100%;
 }
 
-/* Figure floats */
+figure {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+figcaption {
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-top: 0.5rem;
+  color: #444;
+}
+
 .float-left {
   float: left;
   margin-right: 1.5rem;
@@ -68,12 +78,9 @@ a {
   max-width: 40%;
 }
 
-figure figcaption {
-  font-size: 0.85rem;
+.signature {
   font-style: italic;
-  text-align: center;
-  margin-top: 0.5rem;
-  color: #444;
+  margin-top: 2rem;
 }
 
 /* Responsive overrides */
@@ -100,7 +107,9 @@ figure figcaption {
     float: none;
     display: block;
     margin: 0 auto 1.5rem;
-    max-width: 64px;
-    height: auto;
+  }
+
+  figure {
+    text-align: center;
   }
 }
