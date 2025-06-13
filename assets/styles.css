@@ -32,8 +32,17 @@ a {
   text-decoration: underline dotted;
 }
 
+hr {
+  margin: 2rem 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+/* Logo in header */
 .logo-header {
-  width: 80px;
+  max-width: 64px;
+  width: 15vw;
+  height: auto;
   float: right;
   margin-left: 1rem;
   margin-bottom: 1rem;
@@ -42,26 +51,26 @@ a {
 
 /* Inline illustrations */
 figure {
-  margin: 1.5rem 0;
-  max-width: 100%;
+  margin: 2rem 0;
+  text-align: center;
 }
 
 figure img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
+  opacity: 0.95;
   border-radius: 2px;
-  opacity: 0.9;
 }
 
 figcaption {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
+  font-style: italic;
+  margin-top: 0.5rem;
   color: #444;
-  margin-top: 0.25rem;
-  line-height: 1.4;
 }
 
-/* Float styles for responsive inline placement */
+/* Optional floats for illustrations */
 .float-left {
   float: left;
   margin-right: 1.5rem;
@@ -76,6 +85,14 @@ figcaption {
   margin-bottom: 1rem;
   width: 200px;
   max-width: 40%;
+}
+
+/* Final paragraph */
+.signature {
+  font-style: italic;
+  font-weight: 500;
+  margin-top: 2rem;
+  text-align: right;
 }
 
 /* Responsive overrides */
@@ -102,9 +119,6 @@ figcaption {
     float: none;
     display: block;
     margin: 0 auto 1.5rem;
-  }
-
-  figure {
-    text-align: center;
+    width: 64px;
   }
 }
