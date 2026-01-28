@@ -22,6 +22,14 @@ h1 {
   margin-bottom: 1.5rem;
 }
 
+.header-meta {
+  font-size: 0.95rem;
+  margin-top: -1.15rem;
+  margin-bottom: 1.5rem;
+  text-indent: 0;
+  color: #333;
+}
+
 p {
   margin-bottom: 1.25rem;
   text-indent: 1.5em;
